@@ -1,12 +1,12 @@
-类型:传统题
-说明
-【题目描述】
-输入一个正整数N(1<N<20000)，输出1到N之间所有正整数的和(包含1和N)。
-【输入描述】
-输入一个正整数N(1<N<20000)
-【输出描述】
-输出1到N之间所有正整数的和(包含1和N)
-【样例输入】
+Type: Traditional Question
+explain
+[Title Description]
+Input a positive integer N (1<N<20000), and output the sum of all positive integers between 1 and N (including 1 and N).
+[Input Description]
+Enter a positive integer N (1<N<20000)
+[Output Description]
+Output the sum of all positive integers between 1 and N (including 1 and N)
+[Sample Input]
 3
-【样例输出】
+[Sample Output]
 6
