@@ -1,0 +1,46 @@
+Certainly! Let's rephrase the problem description in clear English.
+
+---
+
+**Problem Description**
+
+A number is called a palindrome if it reads the same from left to right as it does from right to left (ignoring leading zeros).
+
+For example, consider the decimal number 56. If we add its reverse, 65 (reading 56 from right to left), we get 121, which is a palindrome.
+
+Another example involves the decimal number 87:
+
+- **Step 1:**
+  - $$87 + 78 = 165$$
+- **Step 2:**
+  - $$165 + 561 = 726$$
+- **Step 3:**
+  - $$726 + 627 = 1353$$
+- **Step 4:**
+  - $$1353 + 3531 = 4884$$
+
+In this context, a "step" refers to performing an addition in base $$N$$ (where $$2 \leq N \leq 10$$ or $$N = 16$$). The example above required a minimum of 4 steps to obtain the palindrome 4884.
+
+Your task is to write a program that takes an $$N$$-base number $$M$$ (with up to 100 digits) and determines the minimum number of steps needed to obtain a palindrome. If it is impossible to obtain a palindrome within 30 steps (including 30 steps), output "Impossible!"
+
+**Input Format**
+- Two lines:
+  1. An integer $$N$$ ($$2 \leq N \leq 10$$ or $$N = 16$$).
+  2. The $$N$$-base number $$M$$ (up to 100 digits).
+
+**Output Format**
+- If it is possible to obtain a palindrome within 30 steps, output in the format "STEP=ans," where $$ans$$ represents the minimum number of steps.
+- Otherwise, output "Impossible!"
+
+**Sample Input**
+```
+10
+87
+```
+
+**Sample Output**
+```
+STEP=4
+```¹²
+
+---
