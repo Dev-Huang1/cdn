@@ -21,29 +21,35 @@
             flex-direction: column;
             color: #333;
             line-height: 1.6;
-        }
-        .container {
             text-align: center;
-            padding: 40px;
-            background: #fff;
+            padding: 20px;
         }
         h1 {
-            font-size: 3.5rem;
+            font-size: 3rem;
             color: #333;
             margin-bottom: 20px;
             font-weight: 700;
         }
         p {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             color: #777;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            p {
+                font-size: 1rem;
+            }
         }
     </style>
 </head>
 <body>
-<div id="container">
-        <h1>The page you’re looking for can’t be found.</h1>
-        <p>The requested URL <strong id="requested-path"></strong> was not found on this server.</p>
-</div>
+    <h1>The page you’re looking for can’t be found.</h1>
+    <p>The requested URL <strong id="requested-path"></strong> was not found on this server.</p>
+
     <script>
         // Get the current path from the URL and replace the placeholder
         document.getElementById('requested-path').textContent = window.location.pathname;
