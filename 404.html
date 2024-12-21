@@ -24,13 +24,8 @@
         }
         .container {
             text-align: center;
-            max-width: 700px;
-            width: 100%;
             padding: 40px;
             background: #fff;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-            overflow: hidden;
         }
         h1 {
             font-size: 3.5rem;
@@ -45,11 +40,10 @@
     </style>
 </head>
 <body>
-    <div class="container">
+<div id="container">
         <h1>The page you’re looking for can’t be found.</h1>
         <p>The requested URL <strong id="requested-path"></strong> was not found on this server.</p>
-    </div>
-
+</div>
     <script>
         // Get the current path from the URL and replace the placeholder
         document.getElementById('requested-path').textContent = window.location.pathname;
